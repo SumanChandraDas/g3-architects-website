@@ -173,6 +173,51 @@ main>section {
     filter: grayscale(100%);
 }
 
+/* enjoy feature section style  */
+.enjoy-feature {
+    display: flex;
+    gap: 146px;
+}
+
+.enjoy-feature .section-title {
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 21px;
+}
+
+.feature-card {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+}
+
+.feature-card .feature-title {
+    font-size: calc(20rem / 16);
+    font-weight: 600;
+    color: rgb(19, 19, 19);
+    margin: 0;
+}
+
+.expirence-badge {
+    padding: 45px 42px;
+    font-size: calc(25rem / 16);
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+.expirence-year {
+    font-size: calc(65rem / 16);
+    font-weight: 700;
+}
+
+.enjoy-features-image-container img {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
 
 /* Rexponsiv styles  */
 /* mobile devises  */
@@ -199,12 +244,18 @@ main>section {
         justify-items: center;
         gap: 24px;
     }
+
+    .expirence-badge {
+        margin: 0;
+    }
 }
 
 
 /* tablate devises  */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .teams {
+
+    .teams,
+    .enjoy-feature {
         flex-direction: column;
     }
 
@@ -218,5 +269,9 @@ main>section {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         gap: 24px;
+    }
+
+    .expirence-badge {
+        margin: 0;
     }
 }
